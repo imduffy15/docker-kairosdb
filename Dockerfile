@@ -7,8 +7,10 @@ EXPOSE 2003
 EXPOSE 2004
 
 # Install curl
-RUN apk add --update curl bash && \
+RUN apk add --update curl bash gettext && \
     rm -rf /var/cache/apk/*
+
+RUN ln -s /usr/bin/envsubst /usr/sbin/envsubst
 
 # Install kariosdb
 RUN mkdir -p /opt \
