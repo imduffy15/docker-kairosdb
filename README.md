@@ -1,7 +1,5 @@
 # Docker-KairosDB
 
-Wrapped around [docker-archlinux-kariosdb](https://github.com/mesosphere/docker-archlinux-kairosdb) that waits for Cassandra to have started.
-
 ## Arguments
 
 The following environment variables can be set
